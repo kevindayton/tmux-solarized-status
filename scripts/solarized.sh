@@ -44,6 +44,8 @@ tmux set-option message-style fg=$tmux_solarized_dark_base03,bg=$tmux_solarized_
 tmux set-option -g status-left-length 80
 tmux set-option -g status-left "#[bg=$tmux_solarized_dark_orange, fg=$tmux_solarized_dark_base02] #{window_panes} #[fg=$tmux_solarized_dark_orange,bg=$tmux_solarized_dark_base1]$tmux_solarized_icon_right_ending#[bg=$tmux_solarized_dark_base1,fg=$tmux_solarized_dark_base03] #S \
 #[bg=$tmux_solarized_dark_base02, fg=$tmux_solarized_dark_base1]$tmux_solarized_icon_right_ending"
+
+tmux set-option -g status-right-length 240
 tmux set-option -g status-right " \
 #[bg=$tmux_solarized_dark_base02, fg=$tmux_solarized_dark_base1]#[bg=$tmux_solarized_dark_base02, fg=$tmux_solarized_dark_base1]󰻠 #{cpu_percentage} $tmux_solarized_icon_narrow_ending_right $arrow_up #{uptime} \
 #[bg=$tmux_solarized_dark_base1, fg=$tmux_solarized_dark_base02]$tmux_solarized_icon_right_ending #[bg=$tmux_solarized_dark_base1, fg=$tmux_solarized_dark_base02] %d %b %Y #[bg=$tmux_solarized_dark_yellow, fg=$tmux_solarized_dark_base1]$tmux_solarized_icon_right_ending #[bg=$tmux_solarized_dark_yellow, fg=$tmux_solarized_dark_base02] %I:%M %p \
